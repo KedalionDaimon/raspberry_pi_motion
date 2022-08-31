@@ -5,9 +5,9 @@
 # Optional: try twice to get an IP-address from a "difficult" router:
 /usr/sbin/route del default
 /usr/bin/sleep 1
-/usr/sbin/dhclient
+/usr/sbin/dhclient -r
 /usr/bin/sleep 3
-/usr/sbin/dhclient
+/usr/sbin/dhclient -r
 /usr/bin/sleep 5
 
 # actually transmit the photos
