@@ -1,0 +1,20 @@
+#!/usr/bin/bash
+
+# definitely remove pictures, whether transmission works or not - in order to avoid getting swamped:
+
+# Optional: try twice to get an IP-address from a "difficult" router:
+/usr/sbin/route del default
+/usr/bin/sleep 1
+/usr/sbin/dhclient
+/usr/bin/sleep 3
+/usr/sbin/dhclient
+/usr/bin/sleep 5
+
+# actually transmit the photos
+/usr/bin/tar czvf /tmp/photos.tgz /photos/ &&  /usr/bin/echo "SNAPSHOTS IN ATTACHMENT" | /usr/bin/mailx -s snapshots -A /tmp/photos.tgz someaddress@someprovider.somewhere ; /usr/bin/sleep 10; /usr/bin/rm /photos/*
+
+# in any case, remove the archive
+/usr/bin/rm /tmp/photos.tgz
+
+# optional: reboot after each transmission:
+/usr/sbin/shutdown -r now
