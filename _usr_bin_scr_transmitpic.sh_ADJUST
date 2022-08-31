@@ -3,8 +3,6 @@
 # definitely remove pictures, whether transmission works or not - in order to avoid getting swamped:
 
 # Optional: try twice to get an IP-address from a "difficult" router:
-/usr/sbin/route del default
-/usr/bin/sleep 1
 /usr/sbin/dhclient -r
 /usr/bin/sleep 3
 /usr/sbin/dhclient -r
