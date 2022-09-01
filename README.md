@@ -3,7 +3,9 @@ Configuration files for Motion and SSMTP on Raspberry Pi OS for camera obseravat
 
 Essentially, have four cameras take pictures - either periodic only, or periodic with motion detection (in which case use crontab.motion as crontab). Files to be adjusted are named _ADJUSTED in the end.
 
-You need to create the directory /photos, too.
+You need to create the directory /photos, too. Best is to mount this directory in RAM, for which add into /etc/fstab e.g. the line:
+
+tmpfs /photos tmpfs rw,mode=1777,size=20M
 
 For details, see:
 
