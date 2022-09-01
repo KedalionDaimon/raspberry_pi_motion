@@ -5,7 +5,7 @@ Essentially, have four cameras take pictures - either periodic only, or periodic
 
 You need to create the directory /photos, too. Best is to mount this directory in RAM, for which add into /etc/fstab e.g. the line:
 
-tmpfs /photos tmpfs rw,mode=1777,size=20M
+tmpfs /photos tmpfs rw,mode=1777,size=20M 0 0
 
 For details, see:
 
