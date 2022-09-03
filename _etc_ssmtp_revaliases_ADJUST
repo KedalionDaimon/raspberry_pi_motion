@@ -7,4 +7,6 @@
 
 root:somemail@someprovider.somewhere:587
 pi:somemail@someprovider.somewhere:587
+root@raspberry:somemail@someprovider.somewhere:587
+pi@raspberry:somemail@someprovider.somewhere:587
 
