@@ -11,4 +11,4 @@ For details, see:
 
 https://youtu.be/KT6VEIXLS00
 
-Note: on a BananaPi M1 (the first generation) running Armbian Jammy, the working video devices apparently are not video0, video2, video4 and video6, but instead, video1, video3, video5 and video7.
+Note: on a BananaPi M1 (the first generation) running Armbian Jammy, the working video devices apparently are not video0, video2, video4 and video6, but instead, video1, video3, video5 and video7. Also, the host for revaliases is "bananapi", not "raspberry".
